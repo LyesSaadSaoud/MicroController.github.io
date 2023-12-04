@@ -1,4 +1,3 @@
-![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/00061c74-435c-4c19-9cd1-a23c64c0377a)
 # MicroController.github.io
 # 1.1. TP1 : Prise en main de l’environnement de programmation du microcontrôleur
 #  1.1.1. Objectif
@@ -105,6 +104,9 @@ Comme on peut le voir, ISIS permet également de présenter facilement des diagr
 Une capture d'écran de la capture schématique ISIS et de l'environnement de simulation interactif est illustrée à la Figure 7.1. La fenêtre d'édition du schéma principal est accom-pagnée d'une fenêtre d'aperçu montrant le dessin entier et une fenêtre de sélection d'objet, qui contient normalement une liste de composants. Toutefois, il affiche également des listes d'autres périphériques disponibles pour une utilisation dans la fenêtre d'édition lorsque des modes spécifiques sont sélectionnés.
 La fenêtre d'édition principale comprend un contour de la feuille, qui montre le bord de la zone de dessin, dans lequel les composants doivent être placés. Le bouton Composant est normalement sélectionné par défaut dans la barre d'outils Mode. Avec ce mode sélection-né, les composants sont récupérés pour être placés sur le schéma en appuyant sur le bou-ton P (pick devices) et en sélectionnant la catégorie de composants requise. Le type d'appa-reil individuel peut alors être choisi dans une liste (Figure 7.2).
 Les composants sont catégorisés comme des microprocesseurs (comprend des microcontrô-leurs), des résistances, des condensateurs, etc. avec des variantes dans chacun d'eux. Les sous-catégories peuvent être sélectionnées. Les composants interactifs, tels que les boutons poussoirs sont regroupés dans la bibliothèque ACTIVE.
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/00061c74-435c-4c19-9cd1-a23c64c0377a)
+
 ![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/72224018-b628-492f-83db-39531e370ae4)
                                                      Fig. 7.1.
 ![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/e241d8c3-f7f4-4614-8106-fb45f1e69032)
