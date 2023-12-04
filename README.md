@@ -174,6 +174,7 @@ Lors de la création d'une nouvelle application, un dossier approprié doit êtr
 6.	Modifier le code et le circuit pour que 7 autres LEDs en plus reliées au PORTB. Les LEDs seront allumées 4 par 4 en alternance (paire et impaire).
     
 ![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/355a5e6f-9a90-47db-bcca-b5c2276057a7)
+
                                                      Fig. 7.4
 
 
