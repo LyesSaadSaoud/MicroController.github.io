@@ -74,3 +74,103 @@ Lorsque MPLAB® X démarre, il ouvre le dernier projet travaillé. Pour éviter 
 Cliquez sur l'icône Nouveau projet  pour lancer le processus de création du projet
  •	Nouvelle fenêtre de projet
 Sélectionnez « Microchip Embedded » (“Microchip Embedded”) puis « Standalone Pro-ject» (“Standalone Project”.).
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/106ae8a1-55ed-43bb-8ca7-21e95e9c8926)
+
+ •	Sélection du processeur
+Sélectionnez «Mid-range 8-bits (PIC10/12/16/MCP)» dans le menu déroulant «Famille», puis sélectionnez «PIC16F877» dans le menu «Périphérique».
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/2fe94e2b-5971-4cd0-a51a-e6fbd732325d)
+
+Nous utilisons le PIC16F877 comme microcontrôleur pour ce TP.
+Cliquez sur Next   
+ •	Sélection du matériel
+Sélectionnez "Simulateur" sous Outils matériels lorsque vous êtes invité à sélectionner un outil.
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/571c41da-0276-4a39-b564-a3dd1fc491e9)
+
+Cliquez sur Next  
+ •	Sélection du compilateur
+Sélectionnez une version installée du compilateur mpasm(v5.xx)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/82f47220-4c40-46ed-8fb0-caad214798f2)
+
+Cliquez sur Next  
+ •	Nom du projet et sélection du dossier
+Cliquez sur le bouton Parcourir et accédez au dossier que vous désirez, ou bien laisser le dossier par défaut.
+Sur la ligne Projet location, taper le nom du projet (par exemple : Projet_1).
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/9643ffb6-6614-4528-b613-cb04480cce0d)
+
+Remarque MPLAB® X remplissant la ligne du dossier de projet ;
+Cliquez sur Finish  
+Toutes nos félicitations ! Vous venez de créer un projet MPLAB® X
+Nous allons maintenant ajouter des fichiers de code source au projet.
+ •	Éditer le fichier source 
+Appuyez en utilisant le bouton doit sur « source files », -> New -> pic_8b_simple.asm.
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/8c11d581-40a3-4669-9d5a-82d11a1cb203)
+
+Dans la fenêtre New pic_8b_simple.asm, taper le nom de fichier « TP1 »
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/5be5d3ca-c6ab-4dc4-86a6-b086dfbfef68)
+
+ •	Ajout de fichiers au projet
+Cliquez avec le bouton droit sur le dossier Fichiers source dans la fenêtre du projet
+Sélectionnez Ajouter un élément existant
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/393d07b2-decc-48e0-a5df-4df8cafcf290)
+
+ •	Ouvrir l'éditeur
+Double-cliquez sur le fichier TP1.asm pour ouvrir l'éditeur. Effacer ce qui existe et taper le code suivant :
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/20cea1e1-e9b2-40cc-9b11-749c923bd873)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/7a5243cf-f711-40f7-a7df-19b78a10b981)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/73802601-ad3d-403f-b75b-47eeb5e190ad)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/026cb387-b7ce-44bb-ad6f-d7bcaa95de73)
+
+C'est un programme très simple conçu pour renforcer la confiance dans votre capacité à construire un projet et à l'exécuter en MPLAB® X.
+ •	Construire le projet 
+Cliquez sur l'icône Nettoyer et construire pour créer le projet
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/07a680b4-c5ee-4749-a9e3-3b67059a0bbc)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/89c9a252-a23f-4c74-a188-a5ec87153f75)
+
+#1.1.4.	Réalisation du circuit électronique sur Proteus 
+Comme on peut le voir, ISIS permet également de présenter facilement des diagrammes de circuit à un standard professionnel.
+Une capture d'écran de la capture schématique ISIS et de l'environnement de simulation interactif est illustrée à la Figure 7.1. La fenêtre d'édition du schéma principal est accom-pagnée d'une fenêtre d'aperçu montrant le dessin entier et une fenêtre de sélection d'objet, qui contient normalement une liste de composants. Toutefois, il affiche également des listes d'autres périphériques disponibles pour une utilisation dans la fenêtre d'édition lorsque des modes spécifiques sont sélectionnés.
+La fenêtre d'édition principale comprend un contour de la feuille, qui montre le bord de la zone de dessin, dans lequel les composants doivent être placés. Le bouton Composant est normalement sélectionné par défaut dans la barre d'outils Mode. Avec ce mode sélection-né, les composants sont récupérés pour être placés sur le schéma en appuyant sur le bou-ton P (pick devices) et en sélectionnant la catégorie de composants requise. Le type d'appa-reil individuel peut alors être choisi dans une liste (Figure 7.2).
+Les composants sont catégorisés comme des microprocesseurs (comprend des microcontrô-leurs), des résistances, des condensateurs, etc. avec des variantes dans chacun d'eux. Les sous-catégories peuvent être sélectionnées. Les composants interactifs, tels que les boutons poussoirs sont regroupés dans la bibliothèque ACTIVE.
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/00061c74-435c-4c19-9cd1-a23c64c0377a)
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/72224018-b628-492f-83db-39531e370ae4)
+
+                                                     Fig. 7.1.
+                                                     
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/e241d8c3-f7f4-4614-8106-fb45f1e69032)
+
+                                                     Fig. 7.2.
+                                                     
+Un circuit pour démontrer le fonctionnement du programme TP1 est représenté à la figure 7.3. 
+
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/10aea7e6-2d49-4b39-86be-fc80604b9374)
+
+                                                     Fig. 7.3.
+                                                     
+Le microcontrôleur est un PIC 16F877, notre dispositif de référence ; D'autres puces PIC seront décrites plus loin. Une diode électroluminescente LED est connecté au port B (RB0), avec un bouton poussoir sur RD0. Il faut noter que pour les simulations, le circuit d'hor-loge externe ne contrôle pas la fréquence de fonctionnement du PIC. Ceci doit être défini dans la boîte de dialogue des propriétés pour le composant MCU (voir ci-dessous). De même, l'entrée MCLR (Master Clear) ne doit pas être connectée pour que le programme s'exécute en mode simulation, alors que cela est essentiel dans le circuit réel.
+Le port n'a pas besoin d'être initialisé pour l'entrée, car c'est également la condition par défaut. D'autre part, les sorties doivent être initialisées par le programme MCU en char-geant le registre de direction de données avec des zéros. Les sorties PIC peuvent générale-ment fournir jusqu'à 25 mA, ce qui est suffisant pour allumer les LED sans aucun pilote supplémentaire. 100 Ω limite le courant dans la LED à environ 20 mA.
+Lors de la création d'une nouvelle application, un dossier approprié doit être prévu pour contenir les fichiers de projet, car le fichier de conception du schéma sera accompagné par plusieurs fichiers associés au programme joint (code source, code hexadécimal, fichier de liste, etc.).
+1.	Réaliser le circuit de la figure 7.3, en utilisant le logiciel Proteus.
+2.	Double clic sur le PIC16F877, la fenêtre de la figure 7.4 doit s’apparaitre.
+3.	Appuyer sur l’icône « Program file » et charger le fichier Pro-ject_1.X.production.hex , pour mon cas : C:/Users/Lyes/MPLABXProjects/Project_1.X/dist/default/production/Project_1.X.production.hex
+4.	Appuyer sur le bouton poussoir, la LED doit s’allumer. 
+5.	Modifier le code et le circuit pour que une autre LED en plus reliée à la pin RB1 soit éteint quand la première LED est allumée et vis-versa.   
+6.	Modifier le code et le circuit pour que 7 autres LEDs en plus reliées au PORTB. Les LEDs seront allumées 4 par 4 en alternance (paire et impaire).
+    
+![image](https://github.com/LyesSaadSaoud/MicroController.github.io/assets/78357759/355a5e6f-9a90-47db-bcca-b5c2276057a7)
+
+                                                    Fig. 7.4
