@@ -15,6 +15,7 @@ Le moteur à courant continu est commandé à partir de la sortie PWM du PIC, vi
 Le VN66 est un dispositif pratique à utiliser car il fonctionne aux tensions de grille de ni-veau TTL. C'est-à-dire que 0 V le met hors tension, + 5 V le met en marche (seuil d'environ 1 V). Il a une impédance d'entrée très élevée, ainsi la fiabilité est améliorée en ajoutant la résistance de shunt à la porte, pour améliorer l'immunité de bruit. La diode à travers le moteur est nécessaire pour couper la fore électromotrice de la charge inductive. Lorsque le système est démarré, le moteur DC commence à tourner, une sortie PWM par défaut est générée avec un rapport 50% de marge / espace. Le MSR (mark space ratio) peut alors être augmenté et diminué à l'aide des boutons haut / bas. Notez que le logiciel doit vérifier chaque fois que le MSR est modifié pour la valeur maximum (FF) ou minimum (00), pour empêcher le retournement et la suppression de la valeur PWM.
 
 MOTEUR Courant contenu
+
 Démarrer moteur CC par bouton poussoir, en utilisant P16F877 (4MHz)
 
                                           Fig. 7.12.
