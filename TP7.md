@@ -21,11 +21,10 @@ Le VN66 est un dispositif pratique à utiliser car il fonctionne aux tensions de
   Programme principal
 
   Initialiser
-
-        Port C = Sorties, moteurs à courant continu
-        Port E = Entrées numériques, bouton-poussoir : 
-        Démarrage, Haut, Bas
-        Taux PWM = 4kHz
+  Port C = Sorties, moteurs à courant continu
+  Port E = Entrées numériques, bouton-poussoir : 
+  Démarrage, Haut, Bas
+  Taux PWM = 4kHz
                  
  Attendre le bouton 'Bouton démarrage moteur'
 
