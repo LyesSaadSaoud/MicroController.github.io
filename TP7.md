@@ -16,23 +16,6 @@ Le VN66 est un dispositif pratique à utiliser car il fonctionne aux tensions de
 
 MOTEUR Courant contenu
 Démarrer moteur CC par bouton poussoir, en utilisant P16F877 (4MHz)
-Programme principal
-Initialiser
-        Port C = Sorties, moteurs à courant continu
-        Port E = Entrées numériques, bouton-poussoir : 
-                 Démarrage, Haut, Bas
-                 Taux PWM = 4kHz
-Attendre le bouton 'Bouton démarrage moteur'
-        Sélectionnez le mode PWM, 50% MSR
-RÉPÉTER
-        CALL Moteur
-TOUJOURS
-Sous-programme Moteur
-        Si Bouton 'Up' enfoncée
-            Vitesse sera incrémentée à moins que le maximum
-        Si Bouton "Bas" enfoncé
-            Vitesse sera décrémentée à moins que minimum
-REVENIR
 
                                           Fig. 7.12.
 
