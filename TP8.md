@@ -46,47 +46,48 @@ Le programme principal lui-même convertit en continu le contenu 16 bits de CCP1
 Fig. 7.15.
 
 Algorithme ECG
-Mesurer la période d'entrée de l'onde d'impulsion et afficher P16F877 (4MHz),
-Source de signal audio, LCD 16x2 
+
+      Mesurer la période d'entrée de l'onde d'impulsion et afficher P16F877 (4MHz),
+      Source de signal audio, LCD 16x2 
 Programme principale
-Initialiser
-PortD = Sorties LCD
-Mode de capture et interruption
+      Initialiser
+      PortD = Sorties LCD
+      Mode de capture et interruption
 Initialiser LCD
-Activer l'interruption de capture
-Répéter
-Convertir le nombre de 16 bits en 5 chiffres BCD
-Affichage d'une période d'onde carrée en entrée
-Toujours
+      Activer l'interruption de capture
+      Répéter
+         Convertir le nombre de 16 bits en 5 chiffres BCD
+         Affichage d'une période d'onde carrée en entrée
+      Toujours
 Sous routines
 Convertir le nombre de 16 bits en 5 chiffres BCD
-Charger le nombre de 16 bits
-Effacer les registres
-Tentes, Thous, Hunds, Tens, Ones
-Répéter
-Soustraire 10000 du nombre
-Jusqu'à Tentes sera négatif
-Restaurer les tentes et le reste
-Répéter
-Soustraire 1000 du reste
-Jusqu'à Thous sera négatif
-Restore Thous et le reste
-Répéter
-Soustraire 100 du reste
-Jusqu'à Hunds sera négatif
-Restaurer les Hunds et le reste
-Répéter
-Soustraire 10 du reste
-Jusqu'à Tens sera négatif
-Restaurer les dizaines et stocker le reste
+      Charger le nombre de 16 bits
+      Effacer les registres
+        Tentes, Thous, Hunds, Tens, Ones
+      Répéter
+        Soustraire 10000 du nombre
+      Jusqu'à Tentes sera négatif
+        Restaurer les tentes et le reste
+      Répéter
+        Soustraire 1000 du reste
+      Jusqu'à Thous sera négatif
+        Restore Thous et le reste
+      Répéter
+        Soustraire 100 du reste
+      Jusqu'à Hunds sera négatif
+        Restaurer les Hunds et le reste
+      Répéter
+        Soustraire 10 du reste
+      Jusqu'à Tens sera négatif
+        Restaurer les dizaines et stocker le reste
 Affichage d'une période entre les ondes R 
-Affichage 'T ='
-Suppression des zéros principaux
-Afficher les chiffres en ASCII
-Afficher 'us'
+        Affichage 'T ='
+        Suppression des zéros principaux
+        Afficher les chiffres en ASCII
+        Afficher 'us'
 ROUTINE DE SERVICE D’INTERRUPTION
-Effacer Timer 1 pour comptage
-Indicateur d'interruption de remise à zéro
+        Effacer Timer 1 pour comptage
+        Indicateur d'interruption de remise à zéro
 
 Fig. 7.16.
 
