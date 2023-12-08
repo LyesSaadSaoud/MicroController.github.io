@@ -14,13 +14,13 @@ Une interface typique de commande de petits moteurs (un moteur à courant contin
 Le moteur à courant continu est commandé à partir de la sortie PWM du PIC, via un FET VN66 de puissance. Cela a un courant de fonctionnement d'environ 1 A maximum, don-nant une puissance d'entrée maximale du moteur de 12 W à la tension de service de 12 V. Les caractéristiques du moteur peuvent être réglées dans la simulation, donc une résistance minimale du moteur d'environ 10 Ω Serait approprié, comme le FET lui-même a une résis-tance avant d'environ 1 Ω.
 Le VN66 est un dispositif pratique à utiliser car il fonctionne aux tensions de grille de ni-veau TTL. C'est-à-dire que 0 V le met hors tension, + 5 V le met en marche (seuil d'environ 1 V). Il a une impédance d'entrée très élevée, ainsi la fiabilité est améliorée en ajoutant la résistance de shunt à la porte, pour améliorer l'immunité de bruit. La diode à travers le moteur est nécessaire pour couper la fore électromotrice de la charge inductive. Lorsque le système est démarré, le moteur DC commence à tourner, une sortie PWM par défaut est générée avec un rapport 50% de marge / espace. Le MSR (mark space ratio) peut alors être augmenté et diminué à l'aide des boutons haut / bas. Notez que le logiciel doit vérifier chaque fois que le MSR est modifié pour la valeur maximum (FF) ou minimum (00), pour empêcher le retournement et la suppression de la valeur PWM.
 
- MOTEUR Courant contenu
+  MOTEUR Courant contenu
 
- Démarrer moteur CC par bouton poussoir, en utilisant P16F877 (4MHz)
+  Démarrer moteur CC par bouton poussoir, en utilisant P16F877 (4MHz)
 
- Programme principal
+  Programme principal
 
- Initialiser
+  Initialiser
 
         Port C = Sorties, moteurs à courant continu
         
